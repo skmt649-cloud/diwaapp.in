@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALL DIWA APPS - Diwa Game Directory & Bonus List</title>
+  <meta name="description" content="Explore Diwa App games, sign-up bonuses up to ₹100, and withdrawal details. Informational directory for third-party gaming apps.">
+  <link rel="canonical" href="https://diwaapp.in/">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="apple-touch-icon" href="/images/logo.webp">
+</head>
+<body>
+
+  <!-- Top Header Bar (Logo & Title click takes to Home) -->
+  <header class="top-header">
+    <div class="header-container">
+      <a href="index.html" class="logo-area" style="text-decoration: none;">
+        <img src="images/logo.webp" alt="Diwa Logo" class="site-logo">
+        <h1 class="site-title">ALL DIWA APPS</h1>
+      </a>
+      <div class="header-right">
+        <a href="https://t.me/+C1QCTu2FyfE1Mzll" target="_blank" rel="noopener" class="header-tg-pill">
+          <span>Join Us</span>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="#229ED9"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .37z"/></svg>
+        </a>
+        <button class="menu-toggle" id="menuBtn" onclick="toggleMenuPopup(event)">
+          <span>☰ Menu</span>
+        </button>
+
+        <!-- Dropdown Popup -->
+        <div class="menu-dropdown" id="menuDropdown">
+          <a href="index.html" class="menu-item-btn">🏠 Home</a>
+          <a href="about-diwa-app/index.html" class="menu-item-btn">👤 About</a>
+          <a href="contact.html" class="menu-item-btn">📞 Contact</a>
+          <a href="privacy-policy/index.html" class="menu-item-btn">⚠️ Policy</a>
+          <a href="responsible-gaming/index.html" class="menu-item-btn">📋 T&C</a>
+          <a href="blog.html" class="menu-item-btn">✍️ Blog</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sub Navigation Bar -->
+  <nav class="sub-nav">
+    <div class="sub-nav-container">
+      <a href="index.html" class="nav-item active">🏠 Home</a>
+      <a href="about-diwa-app/index.html" class="nav-item">👤 About</a>
+      <a href="privacy-policy/index.html" class="nav-item">⚠️ Policy</a>
+      <a href="blog.html" class="nav-item">📰 Blog</a>
+      <a href="contact.html" class="nav-item">📞 Contact</a>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <main class="page-container">
+    
+    <!-- Search Bar -->
+    <div class="search-box-wrapper">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="gameSearch" placeholder="Search All Diwa App Here..." onkeyup="searchGames()">
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs-header">
+      <button class="tab-btn active" id="btn-all" onclick="openTab('all')">All Apps</button>
+      <button class="tab-btn" id="btn-new" onclick="openTab('new')">New Apps</button>
+    </div>
+
+    <!-- Apps Table List (All Apps - 10 Games) -->
+    <div class="app-list-section" id="tab-all-apps">
+      
+      <!-- 1 -->
+      <div class="game-row" data-name="diwa lucky">
+        <span class="serial-no">1</span>
+        <img src="images/diwa-lucky.webp" alt="Diwa Lucky" class="app-icon">
+        <div class="app-details">
+          <h2 class="app-name">Diwa Lucky</h2>
+          <div class="app-bonus">Bonus Upto ₹100</div>
+          <div class="app-withdraw">🏦 Min. Withdraw ₹100</div>
+        </div>
+        <a href="diwa-lucky.html" class="row-download-btn">➡️ Download</a>
+      </div>
+
+      <!-- 2 -->
+      <div class="game-row" data-name="diwa play">
+        <span class="serial-no">2</span>
+        <img src="images/diwa-play.webp" alt="Diwa Play" class="app-icon">
+        <div class="app-details">
+          <h2 class="app-name">Diwa Play</h2>
+          <div class="app-bonus">Bonus Upto ₹100</div>
+          <div class="app-withdraw">🏦 Min. Withdraw ₹100</div>
+        </div>
+        <a href="diwa-play.html" class="row-download-btn">➡️ Download</a>
+      </div>
+
+      <!-- 3 -->
+      <div class="game-row" data-name="diwa king">
+        <span class="serial-no">3</span>
+        <img src="images/diwa-king.webp" alt="Diwa King" class="app-icon">
+        <div class="app-details">
+          <h2 class="app-name">Diwa King</h2>
+          <div class="app-bonus">Bonus Upto ₹100</div>
+          <div class="app-withdraw">🏦 Min. Withdraw ₹100</div>
+        </div>
+        <a href="diwa-king.html" class="row-download-btn">➡️ Download</a>
+      </div>
+
+      <!-- 4 -->
+      <div class="game-row" data-name="mqm bet">
+        <span class="serial-no">4</span>
+        <img src="images/mqm-bet.webp" alt="MQM Bet" class="app-icon">
+        <div class="app-details">
+          <h2 class="app-name">MQM Bet</h2>
+          <div class="app-bonus">Bonus Upto ₹100</div>
+          <div class="app-withdraw">🏦 Min. Withdraw ₹100</div>
+        </div>
+        <a href="mqm-bet.html" class="row-download-btn">➡️ Download</a>
+      </div>
+
+      <!-- 5 -->
+      <div class="game-row" data-name="svip 777">
+        <span class="serial-no">5</span>
+        <img src="images/svip-777.webp" alt="SVIP 777" class="app-icon">
+        <div class="app-details">
+          <h2 class="app-name">SVIP 777</h2>
+          <div class="app-bonus">Bonus Upto ₹100</div>
+          <div class="app-withdraw">🏦 Min. Withdraw ₹100</div>
+        </div>
+        <a href="svip-777.html" class="row-download-btn">➡️ Download</a>
+      </div>
+
+      <!-- 6 -->
+      <div class="game-row" data-name="diwa slot">
+        <span class="serial-no">6</span>
+        <img src="images/diwa-slot.webp" alt="Diwa Slot" class="app-icon">
+        <div class="app-details">
+          <h2 class="app-name">Diwa Slot</h2>
+          <div class="app-bonus">Bonus Upto ₹100</div>
+          <div class="app-withdraw">🏦 Min. Withdraw ₹100</div>
+        </div>
+        <a href="diwa-slot.html" class="row-download-btn">➡️ Download</a>
+      </div>
+
+      <!-- 7 -->
+      <div class="game-row" data-name="diwa 777">
+        <span class="serial-no">7</span>
+        <img src="images/diwa-777.webp" alt="Diwa 777" class="app-icon">
+        <div class="app-details">
+          <h2 class="app-name">Diwa 777</h2>
+          <div class="app-bonus">Bonus Upto ₹100</div>
+          <div class="app-withdraw">🏦 Min. Withdraw ₹100</div>
+        </div>
+        <a href="diwa-777.html" class="row-download-btn">➡️ Download</a>
+      </div>
+
+      <!-- 8 -->
+      <div class="game-row" data-name="diwa vip">
+        <span class="serial-no">8</span>
+        <img src="images/diwa-vip.webp" alt="Diwa VIP" class="app-icon">
+        <div class="app-details">
+          <h2 class="app-name">Diwa VIP</h2>
+          <div class="app-bonus">Bonus Upto ₹100</div>
+          <div class="app-withdraw">🏦 Min. Withdraw ₹100</div>
+        </div>
+        <a href="diwa-vip.html" class="row-download-btn">➡️ Download</a>
+      </div>
+
+      <!-- 9 -->
+      <div class="game-row" data-name="good slots">
+        <span class="serial-no">9</span>
+        <img src="images/good-slots.webp" alt="Good Slots" class="app-icon">
+        <div class="app-details">
+          <h2 class="app-name">Good Slots</h2>
+          <div class="app-bonus">Bonus Upto ₹100</div>
+          <div class="app-withdraw">🏦 Min. Withdraw ₹100</div>
+        </div>
+        <a href="good-slots.html" class="row-download-btn">➡️ Download</a>
+      </div>
+
+      <!-- 10 -->
+      <div class="game-row" data-name="diwa x">
+        <span class="serial-no">10</span>
+        <img src="images/diwa-x.webp" alt="Diwa X" class="app-icon">
+        <div class="app-details">
+          <h2 class="app-name">Diwa X</h2>
+          <div class="app-bonus">Bonus Upto ₹100</div>
+          <div class="app-withdraw">🏦 Min. Withdraw ₹100</div>
+        </div>
+        <a href="diwa-x.html" class="row-download-btn">➡️ Download</a>
+      </div>
+
+    </div>
+
+    <!-- Apps Table List (New Apps - 4 Games: 1, 2, 3, 4) -->
+    <div class="app-list-section" id="tab-new-apps" style="display: none;">
+      
+      <!-- 1. Diwa Win -->
+      <div class="game-row" data-name="diwa win">
+        <span class="serial-no">1</span>
+        <img src="images/diwa-win.webp" alt="Diwa Win" class="app-icon">
+        <div class="app-details">
+          <h2 class="app-name">Diwa Win</h2>
+          <div class="app-bonus">Bonus Upto ₹100</div>
+          <div class="app-withdraw">🏦 Min. Withdraw ₹100</div>
+        </div>
+        <a href="diwa-win.html" class="row-download-btn">➡️ Download</a>
+      </div>
+
+      <!-- 2. Diwa Game -->
+      <div class="game-row" data-name="diwa game">
+        <span class="serial-no">2</span>
+        <img src="images/diwa-game.webp" alt="Diwa Game" class="app-icon">
+        <div class="app-details">
+          <h2 class="app-name">Diwa Game</h2>
+          <div class="app-bonus">Bonus Upto ₹100</div>
+          <div class="app-withdraw">🏦 Min. Withdraw ₹100</div>
+        </div>
+        <a href="diwa-game.html" class="row-download-btn">➡️ Download</a>
+      </div>
+
+      <!-- 3. Diwa Top -->
+      <div class="game-row" data-name="diwa top">
+        <span class="serial-no">3</span>
+        <img src="images/diwa-top.webp" alt="Diwa Top" class="app-icon">
+        <div class="app-details">
+          <h2 class="app-name">Diwa Top</h2>
+          <div class="app-bonus">Bonus Upto ₹100</div>
+          <div class="app-withdraw">🏦 Min. Withdraw ₹100</div>
+        </div>
+        <a href="diwa-top.html" class="row-download-btn">➡️ Download</a>
+      </div>
+
+      <!-- 4. Diwa Ace -->
+      <div class="game-row" data-name="diwa ace">
+        <span class="serial-no">4</span>
+        <img src="images/diwa-ace.webp" alt="Diwa Ace" class="app-icon" onerror="this.src='images/logo.webp'">
+        <div class="app-details">
+          <h2 class="app-name">Diwa Ace</h2>
+          <div class="app-bonus">Bonus Upto ₹81</div>
+          <div class="app-withdraw">🏦 Min. Withdraw ₹100</div>
+        </div>
+        <a href="diwa-ace.html" class="row-download-btn">➡️ Download</a>
+      </div>
+
+    </div>
+
+    <!-- Mini Summary / Info Strip -->
+    <div class="content-summary">
+      <p>All Diwa Store - Directory of Diwa Rummy & Casino Apps with signup bonus details and minimum withdrawal terms. Features Diwa Lucky, Diwa Play, Diwa King, Diwa 777, Diwa Win, Diwa VIP, and Diwa Ace.</p>
+    </div>
+
+    <!-- Notice Box -->
+    <div class="notice-card">
+      <h3 class="notice-title">⚠️ Important Notice</h3>
+      <p>Diwaapp.in is an independent promotional directory and does not run, host, or operate the apps listed here. The rummy/casino apps can be addictive and carry financial risk, so play responsibly. Only for 18+ individuals.</p>
+      <p class="notice-sub">Please read our <a href="responsible-gaming/index.html">Responsible Gaming</a> guide and specific disclaimer for each app.</p>
+      <p class="notice-alert"><strong>Alert:</strong> Real-money online card games may be restricted in certain states (e.g. Andhra Pradesh, Telangana, Assam, Odisha, Sikkim, Nagaland).</p>
+    </div>
+
+    <div class="thanks-text">Thanks For Visiting!</div>
+
+    <!-- Scrolling Tags Marquee Ticker -->
+    <div class="tags-ticker-wrapper">
+      <div class="tags-ticker-text">
+        <strong>Tags:</strong> Diwa Lucky, Diwa Play, Diwa King, MQM Bet, SVIP 777, Diwa Slot, Diwa 777, Diwa VIP, Good Slots, Diwa X, Diwa Win, Diwa Game, Diwa Top, Diwa Ace, Diwa App Download, Diwa Rummy APK, Diwa New Apps, Diwa App Bonus ₹100, Diwa Telegram Channel.
+      </div>
+    </div>
+
+    <!-- Strip 1: Telegram Channel -->
+    <div class="strip-bar strip-tg">
+      <div class="strip-left">
+        <span>📲 Join Our Telegram Channel</span>
+      </div>
+      <a href="https://t.me/+C1QCTu2FyfE1Mzll" target="_blank" rel="noopener" class="strip-btn btn-blue">Join Now</a>
+    </div>
+
+    <!-- Strip 2: Share With Friends (Single & Direct Copy Link) -->
+    <div class="strip-bar strip-share">
+      <div class="strip-left">
+        <span>💚 Share With Friends!</span>
+      </div>
+      <button onclick="copySiteLink(this)" class="strip-btn btn-green">Click Here To Share</button>
+    </div>
+
+  </main>
+
+  <!-- Floating Telegram -->
+  <div class="floating-tg">
+    <a href="https://t.me/+C1QCTu2FyfE1Mzll" target="_blank" rel="noopener" class="tg-float-btn">
+      <span class="tg-bubble">Join Us</span>
+      <div class="tg-circle">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .37z"/></svg>
+      </div>
+    </a>
+  </div>
+
+  <!-- Bottom Dark Footer -->
+  <footer class="footer-section">
+    <div class="footer-nav">
+      <a href="about-diwa-app/index.html" class="footer-btn">👤 About Us</a>
+      <a href="contact.html" class="footer-btn">📞 Contact Us</a>
+      <a href="blog.html" class="footer-btn">📰 Blog</a>
+      <a href="privacy-policy/index.html" class="footer-btn">🛡️ Privacy Policy</a>
+      <a href="responsible-gaming/index.html" class="footer-btn">📋 Terms & Conditions</a>
+      <a href="responsible-gaming/index.html" class="footer-btn">⚠️ Disclaimer</a>
+    </div>
+    <div class="footer-copy">
+      Copyright © <strong>Diwaapp.in</strong> All Rights Reserved
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenuPopup(event) {
+      event.stopPropagation();
+      const dropdown = document.getElementById('menuDropdown');
+      dropdown.classList.toggle('show');
+    }
+
+    document.addEventListener('click', function(e) {
+      const dropdown = document.getElementById('menuDropdown');
+      const menuBtn = document.getElementById('menuBtn');
+      if (dropdown && !dropdown.contains(e.target) && e.target !== menuBtn) {
+        dropdown.classList.remove('show');
+      }
+    });
+
+    function openTab(type) {
+      const allSec = document.getElementById('tab-all-apps');
+      const newSec = document.getElementById('tab-new-apps');
+      const btnAll = document.getElementById('btn-all');
+      const btnNew = document.getElementById('btn-new');
+
+      if (type === 'all') {
+        allSec.style.display = 'block';
+        newSec.style.display = 'none';
+        btnAll.classList.add('active');
+        btnNew.classList.remove('active');
+      } else {
+        allSec.style.display = 'none';
+        newSec.style.display = 'block';
+        btnNew.classList.add('active');
+        btnAll.classList.remove('active');
+      }
+    }
+
+    function searchGames() {
+      let input = document.getElementById('gameSearch').value.toLowerCase();
+      let rows = document.querySelectorAll('.game-row');
+      rows.forEach(row => {
+        let name = row.getAttribute('data-name');
+        if (name.includes(input)) {
+          row.style.display = 'flex';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
+
+    // Direct Copy Link Without Opening Any Page Or Crash
+    function copySiteLink(btn) {
+      navigator.clipboard.writeText('https://diwaapp.in');
+      const originalText = btn.innerText;
+      btn.innerText = 'Link Copied! ✅';
+      setTimeout(() => {
+        btn.innerText = originalText;
+      }, 2000);
+    }
+  </script>
+</body>
+</html>

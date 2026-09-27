@@ -1,0 +1,652 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Full Screen Sticky Footer Fix */
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #f7f9fc;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* 1. Header Bar */
+.top-header {
+  background-color: #0b223d;
+  color: #fff;
+  border-bottom: 2px solid #06182c;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.header-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.site-logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.site-title {
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.header-tg-pill {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: #ffffff;
+  color: #0b223d;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: 1px solid #e0e0e0;
+}
+
+.menu-toggle {
+  background: transparent;
+  color: #ffffff;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Menu Dropdown Popup */
+.menu-dropdown {
+  display: none;
+  position: absolute;
+  top: 48px;
+  right: 0;
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  z-index: 2000;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  min-width: 320px;
+}
+
+.menu-dropdown.show {
+  display: grid;
+}
+
+.menu-item-btn {
+  background-color: #0b4594;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 10px 8px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  text-align: center;
+}
+
+.menu-item-btn:hover {
+  background-color: #08336e;
+}
+
+/* 2. Sub Navigation Bar */
+.sub-nav {
+  background-color: #0d2c4e;
+  border-bottom: 1px solid #163e69;
+  width: 100%;
+}
+
+.sub-nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-item {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 18px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  background-color: #ffffff;
+  color: #0b223d;
+}
+
+/* 3. Page Container (Expands to push footer down) */
+.page-container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 15px auto;
+  padding: 0 12px;
+  flex: 1 0 auto;
+}
+
+/* Standard Static Content Card (About, Policy, Disclaimer, Contact) */
+.static-card {
+  background: #ffffff;
+  border: 1px solid #e1e6ed;
+  border-radius: 8px;
+  padding: 30px 24px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.static-card h2 {
+  font-size: 1.7rem;
+  color: #0b223d;
+  margin-bottom: 16px;
+}
+
+.static-card h3 {
+  font-size: 1.2rem;
+  color: #1f4e9e;
+  margin: 20px 0 10px;
+  border-left: 4px solid #1f4e9e;
+  padding-left: 10px;
+}
+
+.static-card p {
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 14px;
+}
+
+.static-card ul {
+  margin-left: 20px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Disclaimer Safe Notice Box (In Blue/Neutral, No Harsh Red) */
+.info-notice-box {
+  background: #f0f6ff;
+  border: 1.5px solid #bcd8ff;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.info-notice-box h4 {
+  color: #0b4594;
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.info-notice-box p {
+  color: #333;
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+/* 4. Search Bar */
+.search-box-wrapper {
+  background: #ffffff;
+  border: 1.5px solid #a0b2c6;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  padding: 10px 14px;
+  margin-bottom: 16px;
+}
+
+.search-icon {
+  font-size: 1.1rem;
+  margin-right: 10px;
+}
+
+.search-box-wrapper input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1.05rem;
+  color: #444;
+}
+
+/* 5. Tabs */
+.tabs-header {
+  display: flex;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 14px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  background-color: #e5e9f0;
+  color: #333333;
+}
+
+.tab-btn.active {
+  background-color: #1f4e9e;
+  color: #ffffff;
+}
+
+/* 6. Apps List Rows */
+.app-list-section {
+  background: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  border: 1px solid #e1e6ed;
+}
+
+.game-row {
+  display: flex;
+  align-items: center;
+  padding: 12px 14px;
+  border-bottom: 1px solid #edf1f7;
+  gap: 14px;
+}
+
+.game-row:last-child {
+  border-bottom: none;
+}
+
+.serial-no {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #777;
+  min-width: 20px;
+  text-align: center;
+}
+
+.app-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.app-details {
+  flex: 1;
+}
+
+.app-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 3px;
+}
+
+.app-bonus {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #e51a1a;
+  margin-bottom: 2px;
+}
+
+.app-withdraw {
+  font-size: 0.85rem;
+  color: #555;
+  font-weight: 600;
+}
+
+.row-download-btn {
+  background: linear-gradient(180deg, #3c92f5 0%, #1f67db 100%);
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 10px 18px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(31, 103, 219, 0.35);
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+/* 7. Game Detail Page Styling */
+.detail-main-card {
+  background: #ffffff;
+  border: 1px solid #e1e6ed;
+  border-radius: 8px;
+  padding: 24px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.detail-header-flex {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.detail-game-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.detail-meta-text h2 {
+  font-size: 1.3rem;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+.detail-meta-text span {
+  font-size: 0.95rem;
+  color: #0b63ce;
+  font-weight: 600;
+}
+
+.detail-specs-line {
+  border-top: 1px solid #edf1f7;
+  padding-top: 14px;
+  font-size: 1.05rem;
+  color: #444;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.apk-download-large-btn {
+  display: block;
+  background-color: #0022f5;
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px;
+  border-radius: 6px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 10px rgba(0,34,245,0.3);
+  margin-bottom: 12px;
+}
+
+.tg-detail-outline-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #ffffff;
+  color: #0b4594;
+  border: 1.5px solid #0b4594;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.related-apps-banner {
+  background-color: #007a87;
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 800;
+  text-align: center;
+  padding: 14px;
+  border-radius: 4px;
+  margin: 25px 0 15px 0;
+}
+
+/* 8. Notice & Ticker */
+.content-summary {
+  margin: 24px 0 16px;
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+.notice-card {
+  border: 1.5px solid #0b4594;
+  background-color: #f6f9fc;
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin: 18px 0;
+  line-height: 1.6;
+  font-size: 0.88rem;
+  color: #333;
+}
+
+.notice-title {
+  color: #0b223d;
+  font-size: 1.15rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.thanks-text {
+  text-align: center;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1b8a3b;
+  margin: 20px 0;
+}
+
+.tags-ticker-wrapper {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 0.88rem;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+
+.tags-ticker-text {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee-scroll 25s linear infinite;
+}
+
+@keyframes marquee-scroll {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(-100%, 0); }
+}
+
+/* 9. Strip Bars */
+.strip-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+}
+
+.strip-tg {
+  background-color: #f1f7fd;
+  border: 1px solid #d2e4f7;
+}
+
+.strip-share {
+  background-color: #f2fbf4;
+  border: 1px solid #d4f0db;
+}
+
+.strip-left {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.strip-btn {
+  padding: 8px 18px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-blue {
+  background-color: #10599c;
+  color: #ffffff;
+}
+
+.btn-green {
+  background-color: #249942;
+  color: #ffffff;
+}
+
+/* 10. Floating Telegram */
+.floating-tg {
+  position: fixed;
+  right: 16px;
+  bottom: 80px;
+  z-index: 9999;
+}
+
+.tg-float-btn {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  position: relative;
+}
+
+.tg-bubble {
+  background: #229ed9;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 10px;
+  position: absolute;
+  left: -50px;
+  top: 14px;
+  white-space: nowrap;
+}
+
+.tg-circle {
+  width: 52px;
+  height: 52px;
+  background-color: #229ed9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* 11. Dark Footer (Always Sticks to Bottom) */
+.footer-section {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 24px 16px;
+  text-align: center;
+  width: 100%;
+  margin-top: auto;
+  flex-shrink: 0;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.footer-btn {
+  background: transparent;
+  color: #ffffff;
+  border: 1.5px solid #ffffff;
+  border-radius: 6px;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.footer-btn:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+.footer-copy {
+  font-size: 1.05rem;
+  color: #ffffff;
+}
+
+/* Full Responsive Media Queries */
+@media (max-width: 768px) {
+  .sub-nav-container {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .nav-item {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+  }
+  .site-title {
+    font-size: 1.1rem;
+  }
+  .app-name {
+    font-size: 1rem;
+  }
+  .app-icon {
+    width: 52px;
+    height: 52px;
+  }
+  .row-download-btn {
+    padding: 8px 12px;
+    font-size: 0.82rem;
+  }
+  .menu-dropdown {
+    right: 0;
+    min-width: 270px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .static-card {
+    padding: 20px 14px;
+  }
+}

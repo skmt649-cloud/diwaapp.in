@@ -1,0 +1,29 @@
+# Diwa Games Directory Portal
+
+> Community resource portal for Diwa online gaming apps, APK links, guides, and platform updates. We do not own, develop, or operate any third-party gaming apps listed on this website.
+
+## Core Navigation
+- [Home](https://diwaapp.in/): App directory download links, features, and quick links.
+- [Blog & Guides](https://diwaapp.in/blog.html): Gameplay rules, strategies, winning tips, and news.
+- [Contact Support](https://diwaapp.in/contact.html): Platform support, queries, and feedback.
+- [About Platform](https://diwaapp.in/about-diwa-app/): Platform overview, disclaimer, and informational resources.
+
+## Popular Games
+- [Diwa Lucky](https://diwaapp.in/diwa-lucky.html)
+- [Diwa 777](https://diwaapp.in/diwa-777.html)
+- [Diwa Ace](https://diwaapp.in/diwa-ace.html)
+- [Diwa Slot](https://diwaapp.in/diwa-slot.html)
+- [Diwa King](https://diwaapp.in/diwa-king.html)
+- [Diwa VIP](https://diwaapp.in/diwa-vip.html)
+- [Diwa Win](https://diwaapp.in/diwa-win.html)
+- [Diwa Play](https://diwaapp.in/diwa-play.html)
+- [Diwa Game](https://diwaapp.in/diwa-game.html)
+- [Diwa X](https://diwaapp.in/diwa-x.html)
+- [Diwa Top](https://diwaapp.in/diwa-top.html)
+- [Good Slots](https://diwaapp.in/good-slots.html)
+- [MQM Bet](https://diwaapp.in/mqm-bet.html)
+- [SVIP 777](https://diwaapp.in/svip-777.html)
+
+## Policies & Compliance
+- [Responsible Gaming](https://diwaapp.in/responsible-gaming/)
+- [Privacy Policy](https://diwaapp.in/privacy-policy/)
